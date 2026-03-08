@@ -17,7 +17,7 @@ If needed for your install location, run as administrator:
 
 ## Uninstall
 - Delete `data/weather.gon` from your game folder
-- Delete `MewgenicsWeatherTool.exe` from where you extracted it
+- Delete `MewgenicsWeatherTool.exe` and _internal folder from where you extracted them
 
 ## Notes
 THE MAP UI WILL STILL SHOW THE WEATHER/DISASTER/CREATURE EFFECT ICON AT THE TOP RIGHT CORNER BUT ONCE YOU LOAD INTO A FIGHT YOU WILL SEE IT'S NOT ACTIVE
