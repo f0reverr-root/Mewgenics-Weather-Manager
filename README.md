@@ -20,7 +20,7 @@ If needed for your install location, run as administrator:
 - Delete `MewgenicsWeatherTool.exe` from where you extracted it
 
 ## Notes
-The map UI can still show an effect icon in the corner; check an actual fight to confirm active effects.
+THE MAP UI WILL STILL SHOW THE WEATHER/DISASTER/CREATURE EFFECT ICON AT THE TOP RIGHT CORNER BUT ONCE YOU LOAD INTO A FIGHT YOU WILL SEE IT'S NOT ACTIVE
 
 ## Build (Windows)
 ```powershell
