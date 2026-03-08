@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# PyInstaller outputs
+build/
+dist/
+*.spec
+
+# Local release artifacts
+release/
+
+# Virtual environments
+.venv/
+venv/

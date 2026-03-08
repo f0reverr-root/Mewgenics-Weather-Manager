@@ -1,21 +1,39 @@
-﻿# Mewgenics-Weather-Manager
+# Mewgenics Weather Manager
 
-Installation: 
+Simple Windows GUI tool to enable/disable Mewgenics weather effects and install a generated `weather.gon` into your game folder.
 
-Download the mod and extract it to any folder of your choosing.
-*Make sure you run as admin (right click exe > run as administrator or you can right click exe > properties > compatibility and check the box for "Run this program as an Administrator") 
+## Installation
+Download the release ZIP, extract it to any folder, then run `MewgenicsWeatherTool.exe`.
 
-How to Use:
+If needed for your install location, run as administrator:
+- Right click the EXE > Run as administrator
+- Or EXE > Properties > Compatibility > Run this program as an administrator
 
-Toggle the weather/disaster/creature effects you want on or off then click "Install to Game"
-Choose your game's root directory folder
-Launch the game normally
+## How to Use
+- Toggle weather/disaster/creature effects on or off
+- Click `Install to Game`
+- Choose your game root directory
+- Launch the game normally
 
-Uninstall:
+## Uninstall
+- Delete `data/weather.gon` from your game folder
+- Delete `MewgenicsWeatherTool.exe` from where you extracted it
 
-Delete "weather.gon" from the data folder inside your game's root directory
-Delete "MewgenicsWeatherTool.exe" from the place you downloaded it to
+## Notes
+The map UI can still show an effect icon in the corner; check an actual fight to confirm active effects.
 
-If you have any questions or issues, feel free to reach out.
+## Build (Windows)
+```powershell
+PowerShell -ExecutionPolicy Bypass -File .\build_release.ps1
+```
 
-***THE MAP UI WILL STILL SHOW THE WEATHER/DISASTER/CREATURE EFFECT ICON AT THE TOP RIGHT CORNER BUT ONCE YOU LOAD INTO A FIGHT YOU WILL SEE IT'S NOT ACTIVE***
+## Release artifacts
+- `release/MewgenicsWeatherTool.zip`
+- `release/SHA256.txt`
+- `release/RELEASE_NOTES_v1.0.0.md`
+
+## Verify release integrity
+```powershell
+certutil -hashfile .\release\MewgenicsWeatherTool.zip SHA256
+```
+Compare with `release/SHA256.txt`.
